@@ -1,0 +1,12 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class='main-content-aps'>
+  <div class='content-header-aps'>
+    <p>Status: <span [ngClass]="{on: flagConect, off:!flagConect}">{{status}}</span></p>
+    <p class='main-title'>APS microcontroladores</p>
+    <div *ngIf="!flagConect" class="col-md-3 col-sm-3 col-xs-6"> <a href="#" (click)='clickConectar()' class="btn btn-sm animated-button animacao">Conectar</a> </div>
+  </div>  
+  <div class='content-body-aps'> 
+    <p><span><img src="../assets/icons8-temperature-30.png"></span>Temperatura: {{temperatura}}</p>
+    <p><span><img src="../assets/icons8-umidade-30.png"></span>Umidade: {{umidade}}%</p>
+  </div>
+</div>
